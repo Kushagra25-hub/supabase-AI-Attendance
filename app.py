@@ -1,7 +1,4 @@
-
 import streamlit as st
-
-st.write("QUERY PARAMS:", st.query_params)
 
 from src.screens.home_screen import home_screen
 from src.screens.teacher_screen import teacher_screen
