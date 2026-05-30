@@ -41,6 +41,61 @@ def style_background_dashboard():
 
 def style_base_layout():
 # asdasd
+    
+    st.markdown("""
+<style>
+                
+
+/* Dialog text */
+[data-testid="stDialog"] h1,
+[data-testid="stDialog"] h2,
+[data-testid="stDialog"] h3,
+[data-testid="stDialog"] h4,
+[data-testid="stDialog"] p,
+[data-testid="stDialog"] label {
+    color: white !important;
+}
+
+
+                
+/* Dialog background */
+[data-testid="stDialog"] > div {
+    background-color: #0B1020 !important;
+}
+
+/* Input text */
+[data-testid="stDialog"] input {
+    color: white !important;
+}
+
+/* Toast container */
+[data-testid="stToast"] {
+    background: #5865F2 !important;
+    color: white !important;
+    border-radius: 16px !important;
+    border: 2px solid #EB459E !important;
+    padding: 12px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25) !important;
+}
+
+/* Toast text */
+[data-testid="stToast"] p,
+[data-testid="stToast"] span,
+[data-testid="stToast"] div {
+    color: white !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+/* Toast icon */
+[data-testid="stToast"] svg {
+    fill: white !important;
+    color: white !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
     st.markdown("""
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
@@ -113,6 +168,8 @@ button * {
 }
 
 
+                
+                
 /* Secondary buttons */
 
 button[kind="secondary"] {
@@ -137,3 +194,8 @@ button:hover {
 
                 """
             ,unsafe_allow_html=True)
+    
+
+
+
+
